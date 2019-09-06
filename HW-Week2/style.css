@@ -3,7 +3,10 @@ nav{
     padding: 5px 10px
 }
 nav li {
-
+    padding: 5px 15px;
+    margin: 15px 0px;
+    background-color: #ffffff;
+    border: 1px; 
 }
 nav ul {
     list-style: none;
@@ -16,5 +19,14 @@ nav ul a {
     text-transform: uppercase;
 }
 @media(min-width: 540px){
-
+    nav ul li{
+        display: inline-block;
+        margin: 10px 5px;
+    }
+    nav ul {
+        text-align: center;
+    }
+    nav {
+        padding: 0px 10px;
+    }
 }
