@@ -30,7 +30,7 @@ nav ul a {
     text-transform: uppercase;
 }
 
-@media(min-width: 540px){
+@media(min-width: 600px){
     nav ul li{
         display: inline-block;
         padding-bottom:5px;
