@@ -1,19 +1,23 @@
     /*HEADER*/
+    body{
+        margin:0px;
+    }
     header{
-        background-color: #b2e9ff;
+        padding:15px;
     }
 
     .logo{
         float:right;
-        margin: 10px 20px 10px 0px;
+        /*margin: 10px 20px 10px 0px;*/
         height:30px;
-        width:183px;
+        width:137px;
+        clear:both;
     }
 
     header label img{
         height:40px;
         width:40px;
-        margin:10px 0px 10px 20px;
+        /*margin:10px 0px 10px 20px;*/
     }
     header input#hamburg {
         display:none;
@@ -59,24 +63,18 @@
         width: 100%;
     }
 
-    /*
     .container:after{
-        clear:both;
-        margin:auto;
-        content:"";
-        display: block;
+        padding: 0px 15px;
     }
-    */
 
     .shop-image{
-    width:90%;
+    width:100%;
     background-image:url(shopimage.jpg);
     background-size:cover;
     background-position:center;
     min-height:250px;
     margin-left:auto;
     margin-right:auto;
-    margin-bottom:20px;
     }
 
     img {
@@ -92,10 +90,14 @@
     /*MEDIUM SIZE SCREENS*/
     @media(min-width: 520px){
         /*Header*/
+        header{
+            padding-top:45px;
+        }
         .logo{
             display:block;
             margin-right:auto;
             margin-left:auto;
+            margin-top:0px;
             float:none;
         }
         nav ul li{
@@ -108,7 +110,6 @@
             text-align: center;
         }
         nav {
-            background-color: #b2e9ff;
             display:block;
             padding: 0px 10px;
         }
@@ -126,7 +127,7 @@
             width:540px;
         }
         .floater-section{
-            min-height:696px;
+            min-height:690px;
         }
         .width-md-25{
             width:25%;
@@ -165,8 +166,8 @@
         .container{
             width:760px;
         }
-        .floater-section{
-            min-height:732px;
+        .clear{
+            clear:both;
         }
         .width-lg-25{
             width:25%;
@@ -186,4 +187,7 @@
         .width-lg-100{
             width:100%;
         }
+    }
+    @media(min-width: 1280px){
+        
     }
