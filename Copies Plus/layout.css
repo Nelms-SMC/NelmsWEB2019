@@ -7,11 +7,13 @@
     }
 
     .logo{
+        columns: #404040;
+        font-size:18px;
+        font-family: 'Raleway', sans-serif;
+        font-weight:900;
+        text-align:center;
         float:right;
         /*margin: 10px 20px 10px 0px;*/
-        height:30px;
-        width:137px;
-        clear:both;
     }
 
     header label img{
@@ -85,7 +87,6 @@
         position:relative;
         margin-right:auto;
         margin-left:auto;
-        width:100;
     }
     /*MEDIUM SIZE SCREENS*/
     @media(min-width: 520px){
@@ -95,8 +96,7 @@
         }
         .logo{
             display:block;
-            margin-right:auto;
-            margin-left:auto;
+            font-size:30px;
             margin-top:0px;
             float:none;
         }
@@ -126,8 +126,11 @@
         .container{
             width:540px;
         }
+        .clear_md{
+            clear:both;
+        }
         .floater-section{
-            min-height:690px;
+            min-height:520px;
         }
         .width-md-25{
             width:25%;
@@ -151,10 +154,6 @@
     /*LARGE SCREENS*/
     @media(min-width: 800px){
         /*HEADER*/
-        .logo{
-            height:75px;
-            width:343px;
-        }
         nav ul li{
             margin: 10px 40px;
             padding-bottom:5px;
@@ -166,7 +165,14 @@
         .container{
             width:760px;
         }
-        .clear{
+        .floater-section{
+            min-height:600px;
+        }
+        .clear_md{
+            display:none;
+        }
+        .clear_lg{
+            display:block;
             clear:both;
         }
         .width-lg-25{
