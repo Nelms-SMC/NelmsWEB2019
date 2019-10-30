@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav id="navBar">
+            <button id="colorfulButton">Color Me!</button>
+        </nav>
+    </header>
+    <main>
+        <div id="contentMain">
+            <h1>
+                How will this make me a better artist?
+            </h1>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+        document.getElementById("colorfulButton").addEventListener("click", function(){
+
+            console.log("Fire!");
+            var mainc=Content= document.getElementById("contentMain");
+            var redComponent = /*"0"*/Math.random()*255;
+            var greenComponent = Math.random()*255;
+            var blueComponent = /*"255"*/ Math.random()*255;
+
+            var compositeRGBString = "rgb("+redComponent+","+greenComponent+","+blueComponent+")";
+
+            console.log(compositeRGBString);
+
+            contentMain.style.backgroundColor=compositeRGBString;
+        } );
+
+        /*document.getElementById("contentMain").style.backgroundColor="rgb(255,0,0)";*/
+
+        prompt("You answer here!");
+    </script>
+
+</body>
+</html>
